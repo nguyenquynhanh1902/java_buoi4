@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        #denXanh {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 20px;
+        }
+        #denVang {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 20px;
+        }
+        #denDo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="denDo"></div>
+<div id="denVang"></div>
+<div id="denXanh"></div>
+
+<button onclick="batDo()">Red</button>
+<button onclick="batVang()">Yellow</button>
+<button onclick="batXanh()">Green</button>
+
+<script>
+    var denXanh = document.getElementById("denXanh");
+    var denVang = document.getElementById("denVang");
+    var denDo = document.getElementById("denDo");
+
+    function batDo() {
+        denXanh.style.backgroundColor = "gray";
+        denVang.style.backgroundColor = "gray";
+        denDo.style.backgroundColor = "red";
+    }
+    
+    function batVang() {
+        denXanh.style.backgroundColor = "gray";
+        denVang.style.backgroundColor = "yellow";
+        denDo.style.backgroundColor = "gray";
+    }
+
+    function batXanh() {
+        denXanh.style.backgroundColor = "green";
+        denVang.style.backgroundColor = "gray";
+        denDo.style.backgroundColor = "gray";
+    }
+</script>
+
+</body>
+</html>
